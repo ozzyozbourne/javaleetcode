@@ -1,5 +1,7 @@
 public final class Swap{
 
+    private Swap(){}
+
     public static void main(String[] args) {
         var s = new int[]{1,2,3,4,5,6};
         swap(s, 0, s.length -1);

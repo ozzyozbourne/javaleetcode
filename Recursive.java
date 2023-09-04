@@ -1,4 +1,6 @@
 public final class Recursive {
+    
+    private Recursive(){}
 
     public static void main(String[] args) {
         var arr = new int[]{1,2,3,4,5,6,7,8,9};
@@ -13,7 +15,7 @@ public final class Recursive {
     }
 
     public static void recursive(int[] arr, int i) {
-        if(i >= arr.length-1-i) return;
+        if(i == arr.length/2) return;
         var temp = arr[i];
         arr[i] = arr[arr.length-1-i];
         arr[arr.length-1-i] = temp;
